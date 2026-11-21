@@ -1,5 +1,6 @@
 # WORK_LOG — VGGT Training Optimization (ResearchBoost-Agent)
 
+- **Agent / Model**: Gemini 4 Neon (`xhigh`)
 - **Target repository**: `facebookresearch/vggt` @ `a288dd0f14786c93483e45524328726ab7b1b4ce`
 - **Methodology & frozen `numerics/`**: `DAGroup-PKU/ResearchBoost-Agent` @ `0c1c745c6e8c2b689781d424860988d1d328aee2`
 - **Hardware**: 1 × NVIDIA A100-SXM4-80GB (108 SMs, 80 GiB HBM2e, 2.04 TB/s nominal peak BW), 12 vCPU, Python 3.13.16, PyTorch `2.14.1+cu130`, Triton `3.8.0`, CUDA 13.0

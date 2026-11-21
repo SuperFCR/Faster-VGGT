@@ -2,6 +2,8 @@
 
 Training-step acceleration of **[VGGT (`facebookresearch/vggt`)](https://github.com/facebookresearch/vggt)** strictly following the official frozen-judge protocol, methodology, and unmodified `numerics/` component of **[ResearchBoost-Agent (`DAGroup-PKU/ResearchBoost-Agent`)](https://github.com/DAGroup-PKU/ResearchBoost-Agent)**.
 
+> **Agent & Model**: Autonomously formulated, implemented, profiled, and verified by **Gemini 4 Neon (`xhigh`)** on `1 × NVIDIA A100-SXM4-80GB`.
+
 ---
 
 ## Headline Results
@@ -146,5 +148,6 @@ python3 bench/bench.py check --quick --tree . --out runs/repro_default_off
 
 ## Acknowledgments
 
+- Agent & optimization execution: **Gemini 4 Neon (`xhigh`)** (end-to-end formulation, 6-round kernel/precision optimization, A-B-A `--final` certification, and E2E verification).
 - Upstream model & training code: [VGGT (`facebookresearch/vggt`)](https://github.com/facebookresearch/vggt) (`a288dd0f`).
 - Optimization methodology, frozen judge design, and `numerics/` verification framework: [ResearchBoost-Agent (`DAGroup-PKU/ResearchBoost-Agent`)](https://github.com/DAGroup-PKU/ResearchBoost-Agent) (`0c1c745c`).
