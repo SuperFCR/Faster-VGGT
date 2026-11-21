@@ -1,0 +1,274 @@
+{
+ "status": "ok",
+ "runs": {
+  "ref_a": {
+   "status": "ok",
+   "problems": [],
+   "window_s": [
+    27.449,
+    30.218
+   ],
+   "total_s": 57.667,
+   "iterations_timed": 30,
+   "s_per_iteration": 1.9222,
+   "peak_memory_allocated_gib": 28.04,
+   "peak_memory_reserved_gib": 32.68,
+   "startup_to_first_iteration_s": 41.9,
+   "process_wall_s": 117.4,
+   "math_flags_at_end": {
+    "matmul.allow_tf32": true,
+    "cudnn.allow_tf32": true,
+    "cudnn.benchmark": false,
+    "cudnn.deterministic": false
+   },
+   "window_ratio": 0.9084,
+   "run_status": "ok",
+   "wall_s": 117.4,
+   "fingerprint": {
+    "argv": [
+     "torchrun --nproc-per-node=1",
+     "timing.py",
+     "--warmup",
+     "6",
+     "--window",
+     "15",
+     "--repeats",
+     "2",
+     "--",
+     "--config",
+     "_rba_vggt"
+    ],
+    "candidate_environment": {},
+    "math_mode": "tf32",
+    "gpus": [
+     [
+      0,
+      "GPU-edc074c2-13d6-5a0f-74d6-625cf37c4723"
+     ]
+    ],
+    "compile_cache": "cold (fresh per run)",
+    "instrumentation": "none",
+    "timing_plan": [
+     6,
+     15,
+     2
+    ],
+    "versions": {
+     "python": "3.13.16",
+     "torch": "2.14.1+cu130",
+     "torchvision": "0.29.1+cu130",
+     "triton": "3.8.0",
+     "hydra-core": "1.3.8",
+     "omegaconf": "2.3.1",
+     "fvcore": "0.1.5.post20221221",
+     "numpy": "2.4.6"
+    }
+   },
+   "log": "/content/work/vggt/ws/runs/baseline/timing_ref_a.log"
+  },
+  "ref_b": {
+   "status": "ok",
+   "problems": [],
+   "window_s": [
+    27.407,
+    30.23
+   ],
+   "total_s": 57.636,
+   "iterations_timed": 30,
+   "s_per_iteration": 1.9212,
+   "peak_memory_allocated_gib": 28.04,
+   "peak_memory_reserved_gib": 32.68,
+   "startup_to_first_iteration_s": 42.1,
+   "process_wall_s": 117.6,
+   "math_flags_at_end": {
+    "matmul.allow_tf32": true,
+    "cudnn.allow_tf32": true,
+    "cudnn.benchmark": false,
+    "cudnn.deterministic": false
+   },
+   "window_ratio": 0.9066,
+   "run_status": "ok",
+   "wall_s": 117.6,
+   "fingerprint": {
+    "argv": [
+     "torchrun --nproc-per-node=1",
+     "timing.py",
+     "--warmup",
+     "6",
+     "--window",
+     "15",
+     "--repeats",
+     "2",
+     "--",
+     "--config",
+     "_rba_vggt"
+    ],
+    "candidate_environment": {},
+    "math_mode": "tf32",
+    "gpus": [
+     [
+      0,
+      "GPU-edc074c2-13d6-5a0f-74d6-625cf37c4723"
+     ]
+    ],
+    "compile_cache": "cold (fresh per run)",
+    "instrumentation": "none",
+    "timing_plan": [
+     6,
+     15,
+     2
+    ],
+    "versions": {
+     "python": "3.13.16",
+     "torch": "2.14.1+cu130",
+     "torchvision": "0.29.1+cu130",
+     "triton": "3.8.0",
+     "hydra-core": "1.3.8",
+     "omegaconf": "2.3.1",
+     "fvcore": "0.1.5.post20221221",
+     "numpy": "2.4.6"
+    }
+   },
+   "log": "/content/work/vggt/ws/runs/baseline/timing_ref_b.log"
+  },
+  "ref_c": {
+   "status": "ok",
+   "problems": [],
+   "window_s": [
+    27.393,
+    30.263
+   ],
+   "total_s": 57.656,
+   "iterations_timed": 30,
+   "s_per_iteration": 1.9219,
+   "peak_memory_allocated_gib": 28.04,
+   "peak_memory_reserved_gib": 32.68,
+   "startup_to_first_iteration_s": 41.9,
+   "process_wall_s": 117.4,
+   "math_flags_at_end": {
+    "matmul.allow_tf32": true,
+    "cudnn.allow_tf32": true,
+    "cudnn.benchmark": false,
+    "cudnn.deterministic": false
+   },
+   "window_ratio": 0.9052,
+   "run_status": "ok",
+   "wall_s": 117.4,
+   "fingerprint": {
+    "argv": [
+     "torchrun --nproc-per-node=1",
+     "timing.py",
+     "--warmup",
+     "6",
+     "--window",
+     "15",
+     "--repeats",
+     "2",
+     "--",
+     "--config",
+     "_rba_vggt"
+    ],
+    "candidate_environment": {},
+    "math_mode": "tf32",
+    "gpus": [
+     [
+      0,
+      "GPU-edc074c2-13d6-5a0f-74d6-625cf37c4723"
+     ]
+    ],
+    "compile_cache": "cold (fresh per run)",
+    "instrumentation": "none",
+    "timing_plan": [
+     6,
+     15,
+     2
+    ],
+    "versions": {
+     "python": "3.13.16",
+     "torch": "2.14.1+cu130",
+     "torchvision": "0.29.1+cu130",
+     "triton": "3.8.0",
+     "hydra-core": "1.3.8",
+     "omegaconf": "2.3.1",
+     "fvcore": "0.1.5.post20221221",
+     "numpy": "2.4.6"
+    }
+   },
+   "log": "/content/work/vggt/ws/runs/baseline/timing_ref_c.log"
+  }
+ },
+ "total_s_runs": [
+  57.667,
+  57.636,
+  57.656
+ ],
+ "total_s": 57.653,
+ "s_per_iteration": 1.9218,
+ "window_ratio": 0.9067,
+ "peak_memory_allocated_gib": 28.04,
+ "spread": 0.0005,
+ "rng_fingerprints": {
+  "0": [
+   "22d9336d9233546c",
+   "19f853d47d4e3359",
+   "a195f68a73f58968",
+   "c89998e5e08b3a0e",
+   "871468c75da24885",
+   "abf7e077a581f037",
+   "c23c885ab2e5a63f",
+   "c04df372d71d0d48",
+   "638a8cf1b2b3c161",
+   "e5356afc4514f2f0",
+   "4322d608f942f58a",
+   "76851944c831235c",
+   "609f75f8e22cb610",
+   "debf83ad89776213",
+   "00104f84802cb038",
+   "675e019f984eb4a5",
+   "d3f6ba4fe5c9c913",
+   "5ade11735994be12",
+   "e41d904956bf6dd4",
+   "3c6e9920a5f921ca",
+   "051304d3f13c12aa",
+   "be197523bf4ec22d",
+   "6a2575a2d0b96775",
+   "55482b7adb91457a",
+   "b5944b3413bd46e5",
+   "8e9c4943afc56274",
+   "09aca9d796d5186c",
+   "ac98c0aafa399704",
+   "3c65cb5275e0f418",
+   "fd0c469beb18d55f",
+   "bb8797461bc8f9ca",
+   "96b0c627eedf78a7",
+   "ab36cbee12aa6371",
+   "a73fdc01ce407ddd",
+   "96d96dc5a0daca31",
+   "e2c5cd98c0d1a938"
+  ]
+ },
+ "rng_identical_across_runs": true,
+ "inputs": [
+  {
+   "when": "start",
+   "ok": true,
+   "mismatches": {},
+   "checked": 0,
+   "seconds": 0.0
+  },
+  {
+   "when": "end",
+   "ok": true,
+   "mismatches": {},
+   "checked": 0,
+   "seconds": 0.0
+  }
+ ],
+ "cost": {
+  "gpu_hours": 0.1063,
+  "gpu_runs": 3,
+  "method": "GPU lock hold time x 1 GPU(s) (startup, warmup and failed runs included)"
+ },
+ "evaluator_sha256": "e37be3673e3b8c86e817420c6da9188770ff862dfa381d682c0bec23d256c330",
+ "finished": "2026-11-21T18:12:35"
+}

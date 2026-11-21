@@ -1,0 +1,20 @@
+{
+  "case": {
+    "steps": 20,
+    "phase": "train",
+    "max_epochs": 1,
+    "limit_train_batches": 25,
+    "num_workers": 8,
+    "det_sdpa_math": false,
+    "strict_deterministic": true
+  },
+  "endpoints": [
+    {"name": "objective", "loss": "objective", "steps": [10, 20]},
+    {"name": "loss_camera", "loss": "loss_camera", "steps": [10, 20]},
+    {"name": "loss_conf_depth", "loss": "loss_conf_depth", "steps": [10, 20]},
+    {"name": "loss_reg_depth", "loss": "loss_reg_depth", "steps": [10, 20]},
+    {"name": "loss_grad_depth", "loss": "loss_grad_depth", "steps": [10, 20]},
+    {"name": "step_delta_top1_camera", "loss": "step_delta_top1/camera_head", "steps": [1, 2]},
+    {"name": "step_delta_top1_depth", "loss": "step_delta_top1/depth_head", "steps": [1, 2]}
+  ]
+}

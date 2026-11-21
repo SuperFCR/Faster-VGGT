@@ -1,0 +1,13 @@
+[
+  {
+    "name": "train_2step",
+    "seed": 42,
+    "steps": 2,
+    "phase": "train",
+    "max_epochs": 1,
+    "limit_train_batches": 20,
+    "num_workers": 8,
+    "det_sdpa_math": false,
+    "strict_deterministic": true
+  }
+]

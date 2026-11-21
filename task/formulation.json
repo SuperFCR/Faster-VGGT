@@ -1,0 +1,25 @@
+{
+ "inputs": {
+  "/content/assets/VGGT-1B/model.pt": {
+   "kind": "stat",
+   "value": "5026874952:1795282975344520148"
+  },
+  "/content/assets/vkitti/sequence_list.txt": {
+   "kind": "sha256",
+   "value": "8957f8e1fd511b2775cd015177fa363793ba9a47276dcdba6999128e7060ebd1"
+  },
+  "/content/assets/vkitti/Scene01/clone/extrinsic.txt": {
+   "kind": "sha256",
+   "value": "be51e8115a847b4a1a1c53c8670b99a80891313ef9d95b12e93bfa8c2eeb873b"
+  },
+  "/content/assets/vkitti/Scene01/clone/intrinsic.txt": {
+   "kind": "sha256",
+   "value": "7c7b7a3db438e51bb0c12bfdee56655b66437a61f610516699d084d8318f9ee8"
+  },
+  "/content/work/vggt/ws/task/loader_digest.json": {
+   "kind": "sha256",
+   "value": "08776f0da754892b73aa50eb2252ca03b36c75da30410bea58be7dc6946df099"
+  }
+ },
+ "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+}

@@ -1,0 +1,419 @@
+{
+  "rounds_time": {
+    "runs/r1/time_r1_all/time.json": {
+      "config": "configs/r1_all.json",
+      "s_per_iteration": 1.5534,
+      "speedup_vs_frozen_reference": 1.2372,
+      "peak_memory_allocated_gib": 28.04
+    },
+    "runs/r1/time_r1_gpunorm/time.json": {
+      "config": "configs/r1_gpunorm.json",
+      "s_per_iteration": 1.6767,
+      "speedup_vs_frozen_reference": 1.1462,
+      "peak_memory_allocated_gib": 28.04
+    },
+    "runs/r1/time_r1_n0/time.json": {
+      "config": "configs/r1_n0.json",
+      "s_per_iteration": 1.6545,
+      "speedup_vs_frozen_reference": 1.1615,
+      "peak_memory_allocated_gib": 28.04
+    },
+    "runs/r1/time_r1_nosync/time.json": {
+      "config": "configs/r1_nosync.json",
+      "s_per_iteration": 1.7525,
+      "speedup_vs_frozen_reference": 1.0966,
+      "peak_memory_allocated_gib": 28.04
+    },
+    "runs/r1/time_r1_pin/time.json": {
+      "config": "configs/r1_pin.json",
+      "s_per_iteration": 1.9036,
+      "speedup_vs_frozen_reference": 1.0096,
+      "peak_memory_allocated_gib": 28.04
+    },
+    "runs/r1/time_r1_ropecache/time.json": {
+      "config": "configs/r1_ropecache.json",
+      "s_per_iteration": 1.8764,
+      "speedup_vs_frozen_reference": 1.0242,
+      "peak_memory_allocated_gib": 28.04
+    },
+    "runs/r2/time_all/time.json": {
+      "config": "configs/r2_all.json",
+      "s_per_iteration": 1.2377,
+      "speedup_vs_frozen_reference": 1.5527,
+      "peak_memory_allocated_gib": 29.73
+    },
+    "runs/r2/time_bf16cache/time.json": {
+      "config": "configs/r2_bf16cache.json",
+      "s_per_iteration": 1.5336,
+      "speedup_vs_frozen_reference": 1.2531,
+      "peak_memory_allocated_gib": 29.73
+    },
+    "runs/r2/time_triton_norm/time.json": {
+      "config": "configs/r2_triton_norm.json",
+      "s_per_iteration": 1.4582,
+      "speedup_vs_frozen_reference": 1.3179,
+      "peak_memory_allocated_gib": 29.73
+    },
+    "runs/r2/time_triton_rope/time.json": {
+      "config": "configs/r2_triton_rope.json",
+      "s_per_iteration": 1.2983,
+      "speedup_vs_frozen_reference": 1.4802,
+      "peak_memory_allocated_gib": 29.73
+    },
+    "runs/r3/time_all/time.json": {
+      "config": "configs/r3_all.json",
+      "s_per_iteration": 1.1655,
+      "speedup_vs_frozen_reference": 1.6489,
+      "peak_memory_allocated_gib": 29.73
+    },
+    "runs/r3/time_fast_quantile/time.json": {
+      "config": "configs/r3_fast_quantile.json",
+      "s_per_iteration": 1.2043,
+      "speedup_vs_frozen_reference": 1.5957,
+      "peak_memory_allocated_gib": 29.73
+    },
+    "runs/r3/time_masked_loss/time.json": {
+      "config": "configs/r3_masked_loss.json",
+      "s_per_iteration": 1.1669,
+      "speedup_vs_frozen_reference": 1.6469,
+      "peak_memory_allocated_gib": 29.73
+    },
+    "runs/r4/time_r4_all_adamw/time.json": {
+      "config": "configs/r4_all_adamw.json",
+      "s_per_iteration": 1.1328,
+      "speedup_vs_frozen_reference": 1.6965,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r4/time_r4_cl/time.json": {
+      "config": "configs/r4_cl.json",
+      "s_per_iteration": 1.1587,
+      "speedup_vs_frozen_reference": 1.6585,
+      "peak_memory_allocated_gib": 30.22
+    },
+    "runs/r4/time_r4_cl_chunk0/time.json": {
+      "config": "configs/r4_cl_chunk0.json",
+      "s_per_iteration": 1.1435,
+      "speedup_vs_frozen_reference": 1.6806,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r4/time_r4_cl_chunk16/time.json": {
+      "config": "configs/r4_cl_chunk16.json",
+      "s_per_iteration": 1.154,
+      "speedup_vs_frozen_reference": 1.6653,
+      "peak_memory_allocated_gib": 30.22
+    },
+    "runs/r4/time_r4_poscache/time.json": {
+      "config": "configs/r4_poscache.json",
+      "s_per_iteration": 1.1634,
+      "speedup_vs_frozen_reference": 1.6519,
+      "peak_memory_allocated_gib": 30.4
+    },
+    "runs/r4/time_r4_rope_nh/time.json": {
+      "config": "configs/r4_rope_nh.json",
+      "s_per_iteration": 1.1319,
+      "speedup_vs_frozen_reference": 1.6979,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r5/time_r5_n1_all/time.json": {
+      "config": "configs/r5_n1_all.json",
+      "s_per_iteration": 1.1232,
+      "speedup_vs_frozen_reference": 1.711,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r5/time_r5_n1_norecomp/time.json": {
+      "config": "configs/r5_n1_all.json",
+      "s_per_iteration": 1.0476,
+      "speedup_vs_frozen_reference": 1.8344,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r5/time_r5_n1_upsample/time.json": {
+      "config": "configs/r5_n1_upsample.json",
+      "s_per_iteration": 1.1495,
+      "speedup_vs_frozen_reference": 1.6718,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r5/time_r5_n1_upsample_norecomp/time.json": {
+      "config": "configs/r5_n1_upsample.json",
+      "s_per_iteration": 1.0347,
+      "speedup_vs_frozen_reference": 1.8574,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r5/time_r5_n1_v2/time.json": {
+      "config": "configs/r5_n1_all.json",
+      "s_per_iteration": 1.0824,
+      "speedup_vs_frozen_reference": 1.7755,
+      "peak_memory_allocated_gib": 30.48
+    },
+    "runs/r6/time_r6_bf16_all/time.json": {
+      "config": "configs/r6_bf16_all.json",
+      "s_per_iteration": 1.1258,
+      "speedup_vs_frozen_reference": 1.707,
+      "peak_memory_allocated_gib": 22.2
+    },
+    "runs/r6/time_r6_bf16_depth/time.json": {
+      "config": "configs/r6_bf16_depth.json",
+      "s_per_iteration": 1.1315,
+      "speedup_vs_frozen_reference": 1.6985,
+      "peak_memory_allocated_gib": 21.82
+    },
+    "runs/r6/time_r6_bf16_depth_fp32up/time.json": {
+      "config": "configs/r6_bf16_depth_fp32up.json",
+      "s_per_iteration": 0.9548,
+      "speedup_vs_frozen_reference": 2.0128,
+      "peak_memory_allocated_gib": 21.82
+    },
+    "runs/r6/time_r6_bf16_depth_tritonup/time.json": {
+      "config": "configs/r6_bf16_depth_tritonup.json",
+      "s_per_iteration": 1.0199,
+      "speedup_vs_frozen_reference": 1.8842,
+      "peak_memory_allocated_gib": 19.15
+    },
+    "runs/r6/time_r6_bf16_depth_v2/time.json": {
+      "config": "configs/r6_bf16_depth.json",
+      "s_per_iteration": 1.2469,
+      "speedup_vs_frozen_reference": 1.5412,
+      "peak_memory_allocated_gib": 19.15
+    },
+    "runs/r6/time_r6_fp32up_norecomp/time.json": {
+      "config": "configs/r6_bf16_depth_fp32up.json",
+      "s_per_iteration": 0.9202,
+      "speedup_vs_frozen_reference": 2.0884,
+      "peak_memory_allocated_gib": 21.82
+    },
+    "runs/r6/time_r6_tritonup_norecomp/time.json": {
+      "config": "configs/r6_bf16_depth_tritonup.json",
+      "s_per_iteration": 0.8752,
+      "speedup_vs_frozen_reference": 2.1959,
+      "peak_memory_allocated_gib": 19.15
+    }
+  },
+  "rounds_check": {
+    "runs/r1/check_default_off/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": null,
+      "speedup": null,
+      "measured_tier": "N0",
+      "bitwise": true,
+      "bitwise_identical": 3776,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "3798327e59721be67f01b0fee1cc55528fe2522bf19e3043a02d179437aa259a",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r2/check_all/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r2_all.json",
+      "speedup": null,
+      "measured_tier": "N1",
+      "bitwise": false,
+      "bitwise_identical": 2706,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "7a7dd56b9219b6083b3eaf88bf652030bc84d64bca7b395e16e8ee6950fd76c1",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r2/check_n0/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r2_n0.json",
+      "speedup": null,
+      "measured_tier": "N0",
+      "bitwise": true,
+      "bitwise_identical": 3776,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "7a7dd56b9219b6083b3eaf88bf652030bc84d64bca7b395e16e8ee6950fd76c1",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r3/check_all/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r3_all.json",
+      "speedup": null,
+      "measured_tier": "N1",
+      "bitwise": false,
+      "bitwise_identical": 2706,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "73ebe32426183b634403a1fa4572c6cad3b54beee668f33ed449670917b788b2",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r3/check_n0/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r3_n0.json",
+      "speedup": null,
+      "measured_tier": "N0",
+      "bitwise": true,
+      "bitwise_identical": 3776,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "73ebe32426183b634403a1fa4572c6cad3b54beee668f33ed449670917b788b2",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r4/check_r4_rope_nh/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r4_rope_nh.json",
+      "speedup": null,
+      "measured_tier": "N1",
+      "bitwise": false,
+      "bitwise_identical": 2705,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "598067a5906ff2cf20f5782d2b0034e9408f2dc3553e3c1db69c8c4f1ea50092",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r6/check_default_off/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": null,
+      "speedup": null,
+      "measured_tier": "N0",
+      "bitwise": true,
+      "bitwise_identical": 3776,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "bc9c3af5ad60dcd2171cd38c36f1aa796155dd9dd23991051a1802f1b92e05c7",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r6/check_r6_bf16_depth_v2/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r6_bf16_depth.json",
+      "speedup": null,
+      "measured_tier": "N1",
+      "bitwise": false,
+      "bitwise_identical": 2702,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "b70e7170bfebc7dd01b312cfa48cbda9fd7b287f179a539f68ac936ced62e881",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r5/full_check_n1/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r5_n1_upsample.json",
+      "speedup": 1.8505,
+      "measured_tier": "N1",
+      "bitwise": null,
+      "bitwise_identical": 2704,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": "equivalent",
+      "source_digest": "bc9c3af5ad60dcd2171cd38c36f1aa796155dd9dd23991051a1802f1b92e05c7",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/r6/full_check_n2/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": "configs/r6_bf16_depth_tritonup.json",
+      "speedup": 2.1989,
+      "measured_tier": "N1",
+      "bitwise": null,
+      "bitwise_identical": 2703,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": "equivalent",
+      "source_digest": "bc9c3af5ad60dcd2171cd38c36f1aa796155dd9dd23991051a1802f1b92e05c7",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/final_check/check.json": {
+      "status": "PASS",
+      "final": true,
+      "config": "configs/final.json",
+      "speedup": 2.1857,
+      "measured_tier": "N1",
+      "bitwise": null,
+      "bitwise_identical": 2703,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": "equivalent",
+      "source_digest": "09c8e56856419bb685f14bc1f0a7bc46416eadcc89bfc27b60949f51d2e71dfe",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/final_check_n1/check.json": {
+      "status": "PASS",
+      "final": true,
+      "config": "configs/final_n1.json",
+      "speedup": 1.863,
+      "measured_tier": "N1",
+      "bitwise": null,
+      "bitwise_identical": 2704,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": "equivalent",
+      "source_digest": "09c8e56856419bb685f14bc1f0a7bc46416eadcc89bfc27b60949f51d2e71dfe",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    },
+    "runs/final_check_default_off/check.json": {
+      "status": "PASS",
+      "final": false,
+      "config": null,
+      "speedup": null,
+      "measured_tier": "N0",
+      "bitwise": true,
+      "bitwise_identical": 3776,
+      "checked": 3776,
+      "exact_failures": 0,
+      "dtype_changes": 0,
+      "trajectory_verdict": null,
+      "source_digest": "09c8e56856419bb685f14bc1f0a7bc46416eadcc89bfc27b60949f51d2e71dfe",
+      "evaluator_sha256": "c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d"
+    }
+  },
+  "git_log_opt": [
+    "36b1354 fix(val_epoch): scope deferred scalar logging to phase==train so val_epoch meters flush cleanly",
+    "d95dfb3 round5+6: zero-sync rotation/quantile + cross-block triton fusion + deterministic triton bilinear upsample + do_not_specialize + local depth-head bf16 (1.86x N1, 2.20x N2)",
+    "b9d430a round4: dpt pos-embed cache + channels_last + unchunked dpt + fused adamw + rope NH layout (1.6979x N1)",
+    "e9cf0c5 round3: 4-pass triton radix-select quantile (160x faster, N0) + sync-free masked loss (1.6489x N1)",
+    "e646293 round2: aggregator bf16 weight cache + triton fused qkv/qknorm/rope + triton ln/ls+add (1.5527x N1)",
+    "cd6cb48 Round 1: host/sync/H2D/GPU-norm/RoPE-cache switches (1.2372x, 1.5534 s/iter)",
+    "a288dd0 readme"
+  ],
+  "diff_stat_vs_upstream": [
+    " training/data/dynamic_dataloader.py   |  11 +-",
+    " training/loss.py                      | 184 +++++++++--",
+    " training/train_utils/fast_quantile.py | 219 +++++++++++++",
+    " training/train_utils/general.py       |  10 +-",
+    " training/train_utils/gradient_clip.py |   8 +-",
+    " training/train_utils/normalization.py |   8 +-",
+    " training/train_utils/optimizer.py     |  11 +-",
+    " training/trainer.py                   |  94 +++++-",
+    " vggt/heads/camera_head.py             |  28 +-",
+    " vggt/heads/dpt_head.py                |  76 ++++-",
+    " vggt/layers/attention.py              |  64 +++-",
+    " vggt/layers/block.py                  |  58 ++++",
+    " vggt/layers/mlp.py                    |   9 +",
+    " vggt/layers/patch_embed.py            |   8 +-",
+    " vggt/layers/rope.py                   |  78 ++++-",
+    " vggt/layers/triton_ops.py             | 589 ++++++++++++++++++++++++++++++++++",
+    " vggt/layers/vision_transformer.py     |  26 +-",
+    " vggt/models/aggregator.py             | 104 ++++--",
+    " vggt/models/vggt.py                   |  47 ++-",
+    " vggt/utils/rotation.py                |  24 +-",
+    " 20 files changed, 1537 insertions(+), 119 deletions(-)"
+  ]
+}

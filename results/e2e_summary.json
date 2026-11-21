@@ -1,0 +1,248 @@
+{
+  "recipe": {
+    "max_epochs": 1,
+    "limit_train_batches": 40,
+    "limit_val_batches": 15,
+    "accum_steps": 2,
+    "max_img_per_gpu": 48,
+    "seed": 42,
+    "save_freq": 1,
+    "val_epoch_freq": 1,
+    "val_len_test": 100
+  },
+  "baseline": {
+    "label": "baseline",
+    "wall_s": 192.74,
+    "train_steps_logged": 41,
+    "val_steps_logged": 10,
+    "train_final": {
+      "Batch Time": {
+        "last": 2.8256,
+        "avg": 2.2695
+      },
+      "Data Time": {
+        "last": 0.0261,
+        "avg": 0.2584
+      },
+      "Mem (GB)": {
+        "last": 29.0,
+        "avg": 27.6829
+      },
+      "Loss/train_loss_objective": {
+        "last": 0.1758,
+        "avg": 0.0344
+      },
+      "Loss/train_loss_camera": {
+        "last": 0.003,
+        "avg": 0.0049
+      },
+      "Loss/train_loss_T": {
+        "last": 0.0023,
+        "avg": 0.0036
+      },
+      "Loss/train_loss_R": {
+        "last": 0.0002,
+        "avg": 0.0004
+      },
+      "Loss/train_loss_FL": {
+        "last": 0.0011,
+        "avg": 0.0017
+      },
+      "Loss/train_loss_conf_depth": {
+        "last": 0.2032,
+        "avg": -0.0589
+      },
+      "Loss/train_loss_reg_depth": {
+        "last": 0.1032,
+        "avg": 0.0494
+      },
+      "Loss/train_loss_grad_depth": {
+        "last": 0.0302,
+        "avg": 0.0537
+      },
+      "Grad/aggregator": {
+        "last": 0.0,
+        "avg": 0.0
+      },
+      "Grad/depth": {
+        "last": 28.6173,
+        "avg": 37.8173
+      },
+      "Grad/camera": {
+        "last": 1.1405,
+        "avg": 1.2473
+      }
+    },
+    "val_final": {
+      "Batch Time": {
+        "last": 1.9073,
+        "avg": 3.1503
+      },
+      "Data Time": {
+        "last": 0.0235,
+        "avg": 0.6058
+      },
+      "Mem (GB)": {
+        "last": 32.0,
+        "avg": 32.0
+      },
+      "Loss/val_loss_objective": {
+        "last": 0.0,
+        "avg": 0.0
+      },
+      "Loss/val_loss_camera": {
+        "last": 0.005,
+        "avg": 0.0039
+      },
+      "Loss/val_loss_T": {
+        "last": 0.0037,
+        "avg": 0.0026
+      },
+      "Loss/val_loss_R": {
+        "last": 0.0002,
+        "avg": 0.0002
+      },
+      "Loss/val_loss_FL": {
+        "last": 0.0021,
+        "avg": 0.0021
+      },
+      "Loss/val_loss_conf_depth": {
+        "last": -0.0579,
+        "avg": -0.0542
+      },
+      "Loss/val_loss_reg_depth": {
+        "last": 0.0542,
+        "avg": 0.0591
+      },
+      "Loss/val_loss_grad_depth": {
+        "last": 0.0221,
+        "avg": 0.0464
+      }
+    },
+    "checkpoint": {
+      "filename": "checkpoint_0.pt",
+      "size_gib": 6.17,
+      "num_keys": 1341,
+      "nonfinite_tensors": 0,
+      "strict_reload_ok": true
+    }
+  },
+  "optimized": {
+    "label": "optimized",
+    "wall_s": 145.01,
+    "train_steps_logged": 41,
+    "val_steps_logged": 10,
+    "train_final": {
+      "Batch Time": {
+        "last": 1.2702,
+        "avg": 1.3226
+      },
+      "Data Time": {
+        "last": 0.0015,
+        "avg": 0.2343
+      },
+      "Mem (GB)": {
+        "last": 20.0,
+        "avg": 19.3415
+      },
+      "Loss/train_loss_objective": {
+        "last": 0.1731,
+        "avg": 0.0344
+      },
+      "Loss/train_loss_camera": {
+        "last": 0.003,
+        "avg": 0.0049
+      },
+      "Loss/train_loss_T": {
+        "last": 0.0023,
+        "avg": 0.0036
+      },
+      "Loss/train_loss_R": {
+        "last": 0.0001,
+        "avg": 0.0004
+      },
+      "Loss/train_loss_FL": {
+        "last": 0.0012,
+        "avg": 0.0018
+      },
+      "Loss/train_loss_conf_depth": {
+        "last": 0.198,
+        "avg": -0.059
+      },
+      "Loss/train_loss_reg_depth": {
+        "last": 0.1027,
+        "avg": 0.0493
+      },
+      "Loss/train_loss_grad_depth": {
+        "last": 0.0304,
+        "avg": 0.0539
+      },
+      "Grad/aggregator": {
+        "last": 0.0,
+        "avg": 0.0
+      },
+      "Grad/depth": {
+        "last": 29.3339,
+        "avg": 37.9549
+      },
+      "Grad/camera": {
+        "last": 1.1681,
+        "avg": 1.2713
+      }
+    },
+    "val_final": {
+      "Batch Time": {
+        "last": 1.0178,
+        "avg": 2.2317
+      },
+      "Data Time": {
+        "last": 0.0008,
+        "avg": 0.9166
+      },
+      "Mem (GB)": {
+        "last": 19.0,
+        "avg": 19.0
+      },
+      "Loss/val_loss_objective": {
+        "last": 0.0,
+        "avg": 0.0
+      },
+      "Loss/val_loss_camera": {
+        "last": 0.0051,
+        "avg": 0.0039
+      },
+      "Loss/val_loss_T": {
+        "last": 0.0039,
+        "avg": 0.0027
+      },
+      "Loss/val_loss_R": {
+        "last": 0.0002,
+        "avg": 0.0002
+      },
+      "Loss/val_loss_FL": {
+        "last": 0.0021,
+        "avg": 0.0021
+      },
+      "Loss/val_loss_conf_depth": {
+        "last": -0.0603,
+        "avg": -0.056
+      },
+      "Loss/val_loss_reg_depth": {
+        "last": 0.0543,
+        "avg": 0.059
+      },
+      "Loss/val_loss_grad_depth": {
+        "last": 0.0223,
+        "avg": 0.0466
+      }
+    },
+    "checkpoint": {
+      "filename": "checkpoint_0.pt",
+      "size_gib": 6.17,
+      "num_keys": 1341,
+      "nonfinite_tensors": 0,
+      "strict_reload_ok": true
+    }
+  },
+  "wall_speedup": 1.3291
+}

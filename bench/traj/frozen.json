@@ -1,0 +1,174 @@
+{
+ "schema": "numerics-trajectory-frozen@2",
+ "spec": {
+  "case": {
+   "steps": 20,
+   "phase": "train",
+   "max_epochs": 1,
+   "limit_train_batches": 25,
+   "num_workers": 8,
+   "det_sdpa_math": false,
+   "strict_deterministic": true
+  },
+  "endpoints": [
+   {
+    "name": "objective",
+    "loss": "objective",
+    "steps": [
+     10,
+     20
+    ]
+   },
+   {
+    "name": "loss_camera",
+    "loss": "loss_camera",
+    "steps": [
+     10,
+     20
+    ]
+   },
+   {
+    "name": "loss_conf_depth",
+    "loss": "loss_conf_depth",
+    "steps": [
+     10,
+     20
+    ]
+   },
+   {
+    "name": "loss_reg_depth",
+    "loss": "loss_reg_depth",
+    "steps": [
+     10,
+     20
+    ]
+   },
+   {
+    "name": "loss_grad_depth",
+    "loss": "loss_grad_depth",
+    "steps": [
+     10,
+     20
+    ]
+   },
+   {
+    "name": "step_delta_top1_camera",
+    "loss": "step_delta_top1/camera_head",
+    "steps": [
+     1,
+     2
+    ]
+   },
+   {
+    "name": "step_delta_top1_depth",
+    "loss": "step_delta_top1/depth_head",
+    "steps": [
+     1,
+     2
+    ]
+   }
+  ]
+ },
+ "k": 2.0,
+ "reference_seeds": [
+  42,
+  43,
+  44,
+  45,
+  46,
+  47
+ ],
+ "reference_values": {
+  "42": {
+   "objective": -0.09541001059114933,
+   "loss_camera": 0.0053146786172874275,
+   "loss_conf_depth": -0.19683076753281056,
+   "loss_reg_depth": 0.03393594108056277,
+   "loss_grad_depth": 0.04091142369434238,
+   "step_delta_top1_camera": 4.001957822238446e-05,
+   "step_delta_top1_depth": 3.9730213933169933e-05
+  },
+  "43": {
+   "objective": -0.0815831325482577,
+   "loss_camera": 0.004969347204314545,
+   "loss_conf_depth": -0.1787065289914608,
+   "loss_reg_depth": 0.035160970268771054,
+   "loss_grad_depth": 0.037115690484642985,
+   "step_delta_top1_camera": 3.990672353277172e-05,
+   "step_delta_top1_depth": 3.99297150579514e-05
+  },
+  "44": {
+   "objective": -0.12741743260994554,
+   "loss_camera": 0.005808794990298338,
+   "loss_conf_depth": -0.22728787548840046,
+   "loss_reg_depth": 0.032158331968821584,
+   "loss_grad_depth": 0.038668140512891115,
+   "step_delta_top1_camera": 3.99991272454339e-05,
+   "step_delta_top1_depth": 3.9819852440080965e-05
+  },
+  "45": {
+   "objective": -0.07315646521747113,
+   "loss_camera": 0.006241978210164234,
+   "loss_conf_depth": -0.18096121232956647,
+   "loss_reg_depth": 0.035393035877496,
+   "loss_grad_depth": 0.04120182143524289,
+   "step_delta_top1_camera": 4.00549474959363e-05,
+   "step_delta_top1_depth": 3.9701274222499056e-05
+  },
+  "46": {
+   "objective": -0.052198188845068216,
+   "loss_camera": 0.005930850422009826,
+   "loss_conf_depth": -0.17274233046919107,
+   "loss_reg_depth": 0.03941184268333018,
+   "loss_grad_depth": 0.05147804645821452,
+   "step_delta_top1_camera": 4.00292167045257e-05,
+   "step_delta_top1_depth": 3.976590185981965e-05
+  },
+  "47": {
+   "objective": -0.03536284100264311,
+   "loss_camera": 0.004733306745765731,
+   "loss_conf_depth": -0.15440114713273942,
+   "loss_reg_depth": 0.04501346107572317,
+   "loss_grad_depth": 0.05035831071436405,
+   "step_delta_top1_camera": 3.9901102064649805e-05,
+   "step_delta_top1_depth": 3.9862740044144074e-05
+  }
+ },
+ "endpoints": {
+  "objective": {
+   "reference_mean": -0.07752134513575583,
+   "sigma_seed": 0.032446189008746955,
+   "delta": 0.06489237801749391
+  },
+  "loss_camera": {
+   "reference_mean": 0.005499826031640016,
+   "sigma_seed": 0.0005891133788152492,
+   "delta": 0.0011782267576304984
+  },
+  "loss_conf_depth": {
+   "reference_mean": -0.1851549769906948,
+   "sigma_seed": 0.024781231643455286,
+   "delta": 0.04956246328691057
+  },
+  "loss_reg_depth": {
+   "reference_mean": 0.036845597159117456,
+   "sigma_seed": 0.004662275679255894,
+   "delta": 0.009324551358511788
+  },
+  "loss_grad_depth": {
+   "reference_mean": 0.04328890554994966,
+   "sigma_seed": 0.006107485768135707,
+   "delta": 0.012214971536271414
+  },
+  "step_delta_top1_camera": {
+   "reference_mean": 3.998511587761698e-05,
+   "sigma_seed": 6.543544908644358e-08,
+   "delta": 1.3087089817288716e-07
+  },
+  "step_delta_top1_depth": {
+   "reference_mean": 3.980161625961085e-05,
+   "sigma_seed": 8.593056782712493e-08,
+   "delta": 1.7186113565424986e-07
+  }
+ }
+}
