@@ -117,6 +117,7 @@ Executed unmodified upstream `training/launch.py` (`torchrun --nproc-per-node=1`
 - `formulation/prep/` — Public asset fetcher (`fetch_assets.sh`), formulation driver (`formulate.sh`), and 6-test acceptance verifier (`accept.py`).
 - `results/` — Official `--final` certificates (`final_check.json`, `final_check_n1.json`, `final_check_default_off.json`), `acceptance_summary.json`, `e2e_summary.json`, `ablation_summary.json`, and per-round `profile.md` / `kernels.md` traces.
 - `WORK_LOG.md` — Full engineering log including failed/regression attempts and root-cause diagnoses.
+- `docs/validation.md`, `docs/measurement.md` — Detailed end-to-end validation loss / checkpoint tables and frozen judge / A-B-A measurement report.
 - `docs/UPSTREAM_README.md` — Original upstream `facebookresearch/vggt` README.
 
 ---
