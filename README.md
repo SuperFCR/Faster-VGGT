@@ -1,6 +1,6 @@
-# vggt-ResearchBoost-Agent
+# Faster-VGGT
 
-Training-step acceleration of **[VGGT (`facebookresearch/vggt`)](https://github.com/facebookresearch/vggt)** strictly following the official frozen-judge protocol, methodology, and unmodified `numerics/` component of **[ResearchBoost-Agent (`DAGroup-PKU/ResearchBoost-Agent`)](https://github.com/DAGroup-PKU/ResearchBoost-Agent)**.
+**2.19× faster** (Tier N2, **−31.7% peak VRAM**) and **1.86× faster** (pure lossless Tier N1) training of official **[VGGT (`facebookresearch/vggt` @ `a288dd0f`)](https://github.com/facebookresearch/vggt)** on a single NVIDIA A100-SXM4-80GB, strictly following the official frozen-judge protocol, methodology, and unmodified `numerics/` component of **[ResearchBoost-Agent (`DAGroup-PKU/ResearchBoost-Agent`)](https://github.com/DAGroup-PKU/ResearchBoost-Agent)**.
 
 > **Agent & Model**: Autonomously formulated, implemented, profiled, and verified by **Gemini 4 Neon (`xhigh`)** on `1 × NVIDIA A100-SXM4-80GB`.
 
@@ -124,11 +124,26 @@ Executed unmodified upstream `training/launch.py` (`torchrun --nproc-per-node=1`
 ## Reproduction
 
 ```bash
-# 1. Fetch public assets (facebook/VGGT-1B model.pt + Virtual KITTI 2.0.3)
-export ASSETS=/path/to/assets
+# 1. Clone Faster-VGGT and place the unmodified upstream baseline at targets/reference
+git clone https://github.com/SuperFCR/Faster-VGGT && cd Faster-VGGT
+git clone https://github.com/facebookresearch/vggt targets/reference
+git -C targets/reference checkout a288dd0f14786c93483e45524328726ab7b1b4ce
+
+# 2. Fetch public assets & dependencies (facebook/VGGT-1B model.pt + Virtual KITTI 2.0.3)
+export ASSETS=$HOME/faster-vggt-assets
 bash formulation/prep/fetch_assets.sh
 
-# 2. Run optimized VGGT training directly with upstream entrypoint (headline 2.19x config)
+# 3. Reproduce the frozen ResearchBoost-Agent judge (A-B-A ref -> cand -> ref + correctness gates)
+#    evaluator_sha256: c5b59bf55f251eca2f3571e0ecba04e39fe9ba32f63fd8fd945e0d1f182c966d
+touch task/final-evaluation
+python3 bench/bench.py check --tree . --config configs/final.json --out runs/repro_final --final
+python3 bench/bench.py check --tree . --config configs/final_n1.json --out runs/repro_n1 --final
+rm -f task/final-evaluation
+
+# Verify default-off bitwise identity (3,776/3,776 tensors, N0)
+python3 bench/bench.py check --quick --tree . --out runs/repro_default_off
+
+# 4. Or run optimized VGGT training directly via the unmodified upstream entrypoint (headline 2.19x config)
 export VGGT_OPT_PIN_MEM=1 VGGT_OPT_GPU_NORM=1 VGGT_OPT_NO_SYNC=1 VGGT_OPT_ROPE_CACHE=1 \
        VGGT_OPT_AGG_BF16_CACHE=1 VGGT_OPT_TRITON_ROPE=1 VGGT_OPT_TRITON_ROPE_NH=1 \
        VGGT_OPT_TRITON_NORM=1 VGGT_OPT_TRITON_FUSED_BLK=1 VGGT_OPT_FAST_QUANTILE=1 \
@@ -137,13 +152,6 @@ export VGGT_OPT_PIN_MEM=1 VGGT_OPT_GPU_NORM=1 VGGT_OPT_NO_SYNC=1 VGGT_OPT_ROPE_C
        VGGT_OPT_HEAD_BF16=depth
 cd training
 PYTHONPATH=..:. torchrun --nnodes=1 --nproc-per-node=1 launch.py --config default
-
-# 3. Reproduce the full ResearchBoost-Agent frozen judge formulation & verification
-#    (requires cloning unmodified facebookresearch/vggt@a288dd0f into targets/reference)
-bash formulation/prep/formulate.sh
-python3 bench/bench.py check --tree . --config configs/final.json --out runs/repro_final
-python3 bench/bench.py check --tree . --config configs/final_n1.json --out runs/repro_n1
-python3 bench/bench.py check --quick --tree . --out runs/repro_default_off
 ```
 
 ## Acknowledgments
